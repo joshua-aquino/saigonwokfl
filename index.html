@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="The official website for the Saigon Wok in Fleming Island.">
+	<meta name="author" content="Joshua Aquino">
+	<link rel="icon" type="image/ico" href="./images/logo.png">
+	<title>Saigon Wok - Fleming Island</title>
+	<link href="./normalize.css" rel="stylesheet">
+	<link href="./style.css" rel="stylesheet">
+</head>
+<body onload="showUser('_');">
+  <nav>
+    <div class="width-limit padded">
+      <div class="nav-bar">
+        <a href="./index.html">•SAIGON WOK•</a>
+        <span>
+          <a href="#order">
+            <i class="fa fa-shopping-cart"></i>
+            <div>Order</div>
+          </a>
+          <a href="#menu">
+            <i class="fab fa-elementor"></i>
+            <div>Menu</div>
+          </a>
+          <a href="#location">
+            <i class="fas fa-map-marked-alt"></i>
+            <div>Location</div>
+          </a>
+          <a href="#about" class="mb-hide">
+            <i class="fa fa-question-circle"></i>
+            <div>About</div>
+          </a>
+        </span>
+      </div>
+    </div>
+  </nav>
+  <div id='page'>
+    <section id="sec-news">
+      <div class="width-limit padded">
+        <small>
+          <i class="fa fa-exclamation-triangle" aria-hidden="true">&nbsp</i>
+          For the safety of our community, we ask that all patrons wear masks. Thank you!
+        </small>
+      </div>
+    </section>
+    <header>
+      <img src="./images/logo.png">
+    </header>
+    <main class="width-limit">
+      <section id="sec-order">
+        <span class="scroll-point" id="order"></span>
+        <div class="padded">
+          <hgroup>
+            <h2>ORDER NOW</h2>
+            <h3>PICKUP / DELIVERY</h3>
+          </hgroup>
+          <p class="text-center">
+            For <b>pickup</b>, call us at <a href="tel:9043750083">(904)375-0083</a>. For <b>delivery</b>, select one of the following options:
+          </p>
+          <div class="link-gallery">
+            <a href="https://postmates.com/merchant/saigon-wok-fleming-island" target="_blank">
+              <img src="./images/postmates.gif">
+            </a>
+            <a href="https://www.grubhub.com/restaurant/saigon-wok-1810-town-center-boulevard-fleming-island/1573309" target="_blank">
+              <img src="./images/grubhub.gif">
+            </a>
+            <a href="https://www.doordash.com/store/saigon-wok-fleming-island-474102" target="_blank">
+              <img src="./images/doordash.gif">
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="sec-menu">
+        <span class="scroll-point" id="menu"></span>
+        <div class="padded">
+          <h2>MENU</h2>
+          <form autocomplete="off" autocapitalize="off">
+            <input type="text" name="q" onkeyup="delayShowUser(this.value);" 
+              placeholder="Looking for something specific?"></input>
+          </form>
+        <div id="menuList"></div>
+      </section>
+      <section id="sec-location">
+        <span class="scroll-point" id="location"></span>
+        <div class="padded">
+          <hgroup>
+            <h2>LOCATION</h2>
+            <h3>FLEMING ISLAND</h3>
+          </hgroup>
+          <div class="row">
+            <div class="one-third column">
+              <h4>Address</h4>
+              <address>
+                1810 Town Center Blvd. Fleming Island, FL 32003
+              </address>
+              <h4>Phone Number</h4>
+              <address>
+                <a href="tel:9043750083">(904)375-0083</a>
+              </address>
+            </div>
+            <div class="one-third column">
+              <h4>Hours</h4>
+              <p>
+                All Week
+                </br>4:00 pm - 9:00 pm
+              </p>
+              <h4>Services</h4>
+              <p>
+                Dine In
+                </br>Pick up
+              </p>
+            </div>
+            <div class="one-third column">
+              <img src="./images/location.png">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sec-about">
+        <span class="scroll-point" id="about"></span>
+        <div class="padded">
+          <h2>ABOUT US</h2>
+          <div class="row">
+            <div class="half column">
+              <img src="./images/about.png">
+            </div>
+            <div class="half column">
+              <p class="text-block">
+              We are very grateful for your support, and we'd like to thank all of our returning customers from Saigon-Tokyo Bistro. We strive to provide high-quality food and service to our local community, and are open to all of your suggestions. Be on the lookout for new menu items, and again, thank you for supporting small family businesses like us. You make our dreams come true!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    <p>
+    Fleming Island | Take-Out & Dine-In
+    </br><a href="tel:9043750083">(904)375-0083</a> | 1810 Town Center Blvd.
+    </br>Fleming Island, FL 32003
+    </p>
+    <img src="./images/logo.png">
+    <img src="./images/piper.png" id="piper">
+  </footer>
+  <script src="./script.js"></script>
+	<script src="https://kit.fontawesome.com/41aeeab5c9.js" crossorigin="anonymous"></script>
+</body>
+</html>
