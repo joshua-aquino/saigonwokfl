@@ -10,7 +10,7 @@
 	<link href="./normalize.css" rel="stylesheet">
 	<link href="./style.css" rel="stylesheet">
 </head>
-<body onload="showUser('_');">
+<body onload="showMenu('_');">
   <nav>
     <div class="width-limit padded">
       <div class="nav-bar">
@@ -77,7 +77,7 @@
         <div class="padded">
           <h2>MENU</h2>
           <form autocomplete="off" autocapitalize="off">
-            <input type="text" name="q" onkeyup="delayShowUser(this.value);" 
+            <input type="text" name="q" onkeyup="delayShowMenu(this.value);" 
               placeholder="Looking for something specific?"></input>
           </form>
         <div id="menuList"></div>

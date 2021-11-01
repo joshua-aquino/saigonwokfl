@@ -1,13 +1,13 @@
 var timer;
 
-function delayShowUser(str) {
+function delayShowMenu(str) {
   clearTimeout(timer);
   timer=setTimeout(function validate(){
-    showUser(str);
+    showMenu(str);
   },250);
 }
 
-function showUser(str) {
+function showMenu(str) {
   if (str == "") {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
